@@ -2,3 +2,5 @@ fastapi
 uvicorn[standart]
 gunicorn
 docker-compose
+python-dotenv
+sqlalchemy
