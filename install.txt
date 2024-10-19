@@ -4,3 +4,5 @@ gunicorn
 docker-compose
 python-dotenv
 sqlalchemy
+asyncpg
+fastapi_users

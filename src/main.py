@@ -2,7 +2,11 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from src.database.database import init_db
 
+from src.auth.router import router as user_router
+
 app = FastAPI()
+
+app.include_router(user_router)
 
 @app.get("/")
 def read_root():
@@ -12,3 +16,4 @@ def read_root():
 @app.on_event('startup')
 async def on_startup():
     await init_db()
+

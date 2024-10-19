@@ -11,3 +11,5 @@ DB_USER = os.environ.get('DB_USER')
 DB_PASS = os.environ.get('DB_PASS')
 
 DATABASE_CONNECTION = f'postgresql+asyncpg://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
+
+SECRET_AUTH = os.environ.get("SECRET_AUTH")
